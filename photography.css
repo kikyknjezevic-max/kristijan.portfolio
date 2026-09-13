@@ -1,0 +1,168 @@
+.banner-2 {
+ width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  opacity: 40%;
+
+}
+
+.adobe-lightroom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 35px 25px 35px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.lightroom-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+
+}
+
+.lightroom-div {
+  width: 93%;
+  margin: 0px 35px 25px 35px;
+}
+
+.adobe-lightroom .mini-text-white {
+  margin: 0px;
+}
+
+.photography-container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.left-photo {
+  flex: 1;
+  margin: 25px 18px 25px 35px;
+  min-width: 280px;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-photo {
+  flex: 1;
+}
+
+
+.summary {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  gap: 25px;
+  padding: 25px 35px;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+.left-summary {
+  flex: 1;
+  min-width: 0;
+  max-width: 500px;
+}
+
+.summary-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.right-summary {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  gap: 3px;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+.thin-image {
+  flex: 1;
+  width: 0;
+  height: auto;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.main-text2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.main-text-white2 {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+
+.thin-image {
+display: none;
+}
+.right-summary {
+  display: none;
+}
+
+.summary-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0px auto;
+  
+}
+
+.lightroom-image {
+ max-width: max-content; 
+ margin: 0;
+}
+
+.lightroom-div {
+  margin: 0;
+  width: 100%;
+}
+
+.left-photo {
+  margin: 0;
+  text-align: center;
+}
+
+.adobe-lightroom {
+  
+  align-items: start;
+  padding: 25px 35px 25px 35px;
+  box-sizing: border-box;
+  text-align: start;
+}
+
+.photography-container {
+  gap: 10px;
+  padding: 25px 35px 25px 35px;
+  box-sizing: border-box;
+}
+
+.left-summary {
+  width: 100%;
+}
+
+}
+
+

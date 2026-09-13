@@ -1,0 +1,483 @@
+body {
+  font-family: "Montserrat";
+  font-size: 14px;
+  background-color: rgba(30, 30, 30, 1);
+  color: rgba(30, 30, 30, 1);
+  margin: 0;
+  padding-top: 50px;
+}
+
+
+p {
+  margin: 0;
+}
+
+.cover {
+  width: 100%;
+  height: 900px;
+}
+
+.cover-image {
+  width: 100%;
+  height: 900px;
+  object-fit: cover;
+  object-position: top;
+  position: relative;
+  
+
+}
+
+.cover-all-text {
+  max-width: 700px;
+  position: absolute;
+  left: 150px;
+  top: 280px;
+
+}
+
+.cover-mid-text {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  margin-top: 15px;
+  color: white;
+}
+
+.right-section {
+  width: 100%;
+}
+
+.right-mid-text {
+  flex: 1;
+}
+
+.skills {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.cover-up-text {
+  width: 100%;
+}
+
+.left-mid-text {
+  width: 250px;
+}
+
+.btn-work,
+.contact-btn {
+  background-color: rgba(30, 30, 30, 1);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 18px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.container-btn {
+  max-width: 150px;
+
+  margin: 25px 0px;
+
+}
+
+.btn-project {
+  background-color: white;
+  color: rgba(30, 30, 30, 1);
+  border: none;
+  border-radius: 4px;
+  padding: 18px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.title-font {
+  font-size: 80px;
+  font-weight: 900;
+  color: white;
+}
+
+
+
+.introduction {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 25px 35px 25px 35px;
+  box-sizing: border-box;
+}
+
+.span-orange {
+  color: rgba(235, 78, 8, 1);
+}
+
+.mini-text-black {
+  font-family: "Archivo";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 20px;
+  margin-top: 25px;
+
+}
+
+.mid-title-black {
+  font-size: 34px;
+  font-weight: 900;
+  margin-top: 10px;
+
+}
+
+.mid-title-white {
+  color: white;
+  font-size: 34px;
+  font-weight: 900;
+  margin-top: 10px;
+
+}
+
+.main-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 15px;
+}
+
+.main-text-white {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 15px;
+}
+
+.showcase {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 25px 35px 25px 35px;
+  box-sizing: border-box;
+}
+
+.mini-text-white {
+  color: white;
+  font-family: "Archivo";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 20px;
+  margin-top: 25px;
+
+
+}
+
+.card-title {
+  color: rgba(235, 78, 8, 1);
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+.card-text {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-left: 35px;
+}
+
+.orange-button {
+  background-color: rgba(235, 78, 8, 1);
+  color: rgba(30, 30, 30, 1);
+  width: 120px;
+  border: none;
+  border-radius: 4px;
+  padding: 18px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+.card-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 35px;
+  border: 1px solid rgba(235, 78, 8, 1);
+  margin: 15px 35px 15px 35px;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.card p {
+  margin: 0px;
+}
+
+
+
+.card button {
+  margin: 0px;
+}
+
+.card-left-side {
+  width: 300px;
+}
+
+.card-right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+
+}
+
+.input-card {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.input-card-left {
+  flex: 1;
+  font-weight: 600;
+  width: 100%;
+  padding: 15px 15px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 5px;
+  margin: 25px 15px 25px 35px;
+
+}
+
+.input-name,
+.input-email,
+.input-msg {
+  margin-top: 10px;
+}
+
+.input-name {
+  margin-top: 0px;
+}
+
+.typebar {
+  width: 100%;
+  border: 1px solid rgb(200, 200, 200);
+  margin: 0;
+  padding: 5px 0px;
+  box-sizing: border-box;
+}
+
+.typebar2 {
+  width: 100%;
+}
+
+.typebar::placeholder {
+  font-family: "Archivo";
+  color: rgb(190, 190, 190);
+  padding-left: 5px;
+
+}
+
+.submit-button {
+  background-color: rgba(235, 78, 8, 1);
+  color: rgba(30, 30, 30, 1);
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.input-card-right {
+  flex: 1;
+  padding-right: 35px;
+  display: flex;
+  flex-direction: column;
+  margin: 25px 35px 25px 15px;
+}
+
+.italic-text {
+  margin-top: 15px;
+}
+
+.facebook {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.instagram {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.title-font {
+  font-size: 54px;
+  font-weight: 900;
+  color: white;
+}
+
+.linkedin {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.behance {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .title-font {
+    font-size: 28px;
+    font-weight: 900;
+    color: white;
+  }
+
+  .cover-all-text {
+    width: calc(100% - 80px);
+    max-width: none;
+    left: 25px;
+  }
+
+  .cover-mid-text {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .left-mid-text {
+    width: auto;
+    flex: 1;
+  }
+
+  .right-mid-text {
+    flex: 1;
+  }
+
+  .input-card {
+    width: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .input-card-left {
+    flex: none;
+    width: calc(100% - 50px);
+    box-sizing: border-box;
+    margin: 25px auto;
+    padding: 15px;
+  }
+
+  .input-card-right {
+    flex: none;
+    width: calc(100% - 50px);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 25px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .typebar,
+  .typebar2 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .card {
+    margin: 15px 20px;
+    padding: 15px;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+
+  .card-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .card-left-side {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-work
+   {
+    font-size: 14px;
+    margin-right: 20px;
+    padding: 0px;
+    padding: 15px 15px;
+  }
+
+  .contact-btn, .btn-project {
+    font-size: 14px;
+    padding: 0px;
+    padding: 15px 15px;
+    
+  }
+
+  .social-media2 {
+    margin: 25px 0px 25px 0px;
+    gap: 35px;
+  }
+
+  .mini-text-black, .mini-text-white {
+    letter-spacing: 10px;
+  }
+
+
+     .contact-div {
+      padding: 0px 35px;
+      box-sizing: border-box;
+      text-align: center;
+     }
+     
+
+}

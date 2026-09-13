@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kristijan Knjezevic Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="illustration.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="photography.css">
+  <link rel="stylesheet" href="about-me.css">
+  <link rel="stylesheet" href="front.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<div class="image-popup">
+  <img class="popup-image">
+</div>
+
+<body>
+  <header class="header">
+    <div class="left-section">
+      <a class="anchor-home" href="index.html">
+        <a class="home-name">Kristijan Knježević</a>
+      <img class="dots" src="cover/dots.PNG">
+    </div>
+    
+    <nav class="right-section" id="nav-menu">
+      <!-- maybe need to switch <a> to <div> in the future-->
+      <a class="home active" href="index.html">Home</a>
+      <a class="illustration" href="illustration.html">Graphic Design</a>
+      <a class="programming" href="front.html">UI/UX &amp; Front-End Development</a>
+      <a class="photography" href="photography.html">Photography</a>
+      <a class="contact" href="contact.html">Contact</a>
+      <a class="about-me" href="about-me.html">About me</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger"><img class="hamburger-img" src="icons/menu.png"></button>
+
+  </header>
+  <main>
+    <div class="cover">
+      <img class="cover-image" src="cover/new.png">
+    </div>
+    <div class="cover-all-text">
+      <div class="cover-up-text">
+        <p class="title-font">KRISTIJAN</p>
+        <p class="title-font">KNJEŽEVIĆ</p>
+      </div>
+      <div class="cover-mid-text">
+        <div class="left-mid-text">
+          <p class="skills">Graphic Designer</p>
+          <p class="skills">UI/UX Designer</p>
+          <p class="skills">Front-end developer</p>
+        </div>
+        <div class="right-mid-text">
+          <p class="skills">Adobe Creative Cloud</p>
+          <p class="skills">Figma</p>
+          <p class="skills">HTML</p>
+          <p class="skills">CSS</p>
+          <p class="skills">JavaScript</p>
+          <p class="skills">GitHub</p>
+        </div>
+      </div>
+
+      <div class="btn">
+        <a href="#showcase">
+          <button class="btn-work">View Selected Work</button></a>
+        <a href="contact.html">
+          <button class="btn-project">Start a Project!</button></a>
+      </div>
+    </div>
+
+    <div class="introduction">
+      <p class="mini-text-black">INTRODUCTION</p>
+      <p class="mid-title-black">Design that survives <span class="span-orange">contact</span> with reality</p>
+      <p class="main-text">I'm Kristijan — a graphic and product designer who moves between print systems and interface
+        design. I take a brand from identity to shippable UI without losing the plot in between. Worked on variety of
+        projects in my 10+ years career and eager to learn new things.</p>
+      <div class="container-btn">
+        <a href="#input-card">
+        <button class="contact-btn">Contact me!</button></a>
+      </div>
+    </div>
+
+    <div class="showcase" id="showcase">
+      <p class="mini-text-white">QUICK PREVIEW</p>
+      <p class="mid-title-white">Project <span class="span-orange">Showcase</span></p>
+      <p class="main-text">Here are few of my projects I&apos;ve done in recent history! </p>
+    </div>
+    <div class="card">
+      <div class="card-left-side"><img class="card-image" src="project-gallery/branding.png"></div>
+      <div class="card-right-side">
+        <p class="card-title">Illustration and Vector Art</p>
+        <p class="main-text-white"> If I had complete freedom in my work, I would design projects like this, I love the
+          tattoo
+          art style, bolder
+          outline and vibrant color palette. Always look forward to have projects like these.</p>
+        <a class="anchor-card" href="illustration.html">
+          <button class="orange-button">See more</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-left-side"><img class="card-image" src="project-gallery/frontend.PNG"></div>
+      <div class="card-right-side">
+        <p class="card-title">Front-end development</p>
+        <p class="main-text-white"> I enjoy turning designs into responsive, functional websites by writing clean,
+          practical code with HTML, CSS, and JavaScript. I like building websites from the ground up, making sure they
+          are responsive and functional.</p>
+        <a class="anchor-button" href="front.html">
+          <button class="orange-button">See more</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-left-side"><img class="card-image" src="photography/photo-7.jpg"
+          style="height: 300px; object-position: center;"></div>
+      <div class="card-right-side">
+        <p class="card-title">Photography</p>
+        <p class="main-text-white"> I&apos;ve always enjoyed photography as a way to capture things I find interesting.
+          I
+          like playing around with composition, lighting, colors, and editing to make a photo feel the way I imagined
+          it. Whether it&apos;s people, places, or random moments, I just enjoy finding a good shot and making it look
+          even
+          better.</p>
+        <a class="anchor-card" href="photography.html">
+          <button class="orange-button">See more</button></a>
+      </div>
+    </div>
+
+    <form class="input-card" id="input-card" action="https://formspree.io/f/mgaerlqy" method="POST">
+      <div class="input-card-left">
+        <div class="input-name">
+          <p>Name</p>
+          <input class="typebar" type="text" name="name" placeholder="Type here" autocomplete="name">
+        </div>
+        <div class="input-email">
+          <p>E-mail</p>
+          <input class="typebar" type="text" name="email" placeholder="Type here" autocomplete="email">
+        </div>
+        <div class="input-msg">
+          <p>Message</p>
+          <textarea class="typebar2" name="message" placeholder="Type here" autocomplete="off"></textarea>
+          <button class="submit-button" type="submit">Submit</button>
+        </div>
+      </div>
+      <div class="input-card-right">
+        <p>I studied <strong>graphic design</strong> before I ever opened had a computer, as a little kid.
+          Seven years in, I split my time between <strong>brand identity</strong> work and product UI, which turns out
+          to be the same
+          job: give people a system they can trust, then get out of the way.
+          Based in Vitez and Zadar currently, working with studios and product teams across <strong>Europe and the
+            US.</strong> Currently
+          taking on a small number of new projects for late 2026.</p>
+        <p class="italic-text"><em>&quot;Good design is obvious. Great design is transparent and it will last
+            forever.&quot;</em></p>
+        <div class="social-media2">
+          <a href="https://www.facebook.com/kristijan.knjezevic/">
+            <img class="facebook" src="icons/facebook.png"></a>
+          <a href="https://www.instagram.com/kiky_knjezevic/?hl=en">
+            <img class="instagram" src="icons/instagram.png"></a>
+          <a href="https://www.linkedin.com/in/kikyknjezevic/">
+            <img class="linkedin" src="icons/linkedin.png"></a>
+          <a href="https://www.behance.net/kiiiffff">
+            <img class="behance" src="icons/behance.png"></a>
+        </div>
+      </div>
+    </form>
+
+  </main>
+
+  <footer class="footer">
+    <div class="made-by">&copy; 2026 Kristijan Knježević</div>
+    <div class="html">Graphic Designer &middot; UI/UX Designer &middot; Front-End Developer</div>
+  </footer>
+
+  <script src="front.js"></script>
+
+</body>
+
+</html>

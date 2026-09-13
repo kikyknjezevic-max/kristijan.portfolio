@@ -1,0 +1,159 @@
+.small-image-ui {
+  max-width: 230px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.small-image-div2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+.website-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+}
+
+.website-image {
+  width: 80%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.website-container .left-photo,
+.frontend-container .left-photo {
+  width: 100%;
+  display: flex;
+  margin: 25px 0px 25px 0px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-photo3 {
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-text-black3  {
+  margin-left: 35px;
+  font-family: "Archivo";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 20px;
+  margin-top: 25px;
+}
+
+.mid-title-black3 {
+  font-size: 34px;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+.right-photo .main-text-white {
+  margin: 25px 35px 25px 35px;
+}
+
+.right-photo .main-text {
+  margin: 25px 35px 25px 35px;
+}
+
+.frontend-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.image-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.popup-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  transform: scale(0.95);
+  transition: transform 0.25s ease;
+}
+
+.image-popup.show {
+    opacity: 1;
+}
+
+.right-side-image-card2 {
+  text-align: center;
+}
+
+.left-side-image-card2 {
+  flex: 1;
+  margin: 10px 35px;
+ 
+}
+
+.image-popup.show .popup-image {
+    transform: scale(1);
+}
+
+@media (max-width: 768px) {
+
+.small-image-ui {
+  max-width: 80px;
+}
+
+.small-image-div2 {
+  flex: 1;
+}
+
+.website-container {
+  padding: 25px 35px 25px 35px;
+  box-sizing: border-box;
+}
+
+
+
+.right-photo .main-text,
+.right-photo .main-text-white {
+  margin: 25px 0px;
+  
+}
+
+.website-image {
+  border: 1px solid white;
+}
+
+.frontend-container {
+  padding: 25px 35px 25px 35px;
+  box-sizing: border-box;
+}
+
+}

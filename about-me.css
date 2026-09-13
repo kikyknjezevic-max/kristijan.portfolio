@@ -1,0 +1,163 @@
+.poster {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hightitle {
+  font-size: 44px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+.poster-img {
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.left-poster {
+  flex: 1;
+  padding: 25px 0px 25px 35px;
+}
+
+.right-poster {
+  flex: 1;
+  margin: 25px 35px 25px 0px;
+
+}
+
+.poster p {
+  margin: 0px;
+}
+
+.poster-reverse {
+  display: flex;
+  background-color: white;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+.poster-img2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.left-poster2 {
+  flex: 1;
+
+  margin: 25px 35px 25px 18px;
+}
+
+.right-poster2 {
+  flex: 1;
+  margin: 25px 18px 25px 35px;
+
+}
+
+.poster-reverse p {
+  margin-top: 15px;
+  margin-left: 0px;
+}
+
+.border-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 180px;
+  height: 180px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid rgba(230, 78, 8, 1);
+  margin: 15px;
+}
+
+.border-box-top {
+  flex: 1;
+  max-width: 25px;
+  max-height: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.creativity-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.orange-text {
+  color: rgba(230, 78, 8, 1);
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.orange-text2 {
+  color: rgba(230, 78, 8, 1);
+  font-size: 12px;
+}
+
+.border-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width:768px) {
+
+  .poster {
+    flex-direction: column;
+    justify-content: none;
+    gap: 2px;
+  }
+
+  .right-poster {
+    padding: 0px 35px;
+    box-sizing: border-box;
+  }
+
+  .poster-img {
+    width: calc(100%-75px);
+    height: auto;
+    display: block;
+
+  }
+
+  .left-poster {
+    flex: 1;
+    padding: 0px;
+    height: auto;
+  }
+
+  .poster-reverse {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .left-poster2 {
+    margin: 0;
+  }
+
+  .right-poster2 {
+  margin: 0;
+  padding: 25px 35px 25px 35px;
+  gap: 0;
+  
+  }
+
+}

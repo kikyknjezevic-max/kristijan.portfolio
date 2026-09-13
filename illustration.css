@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+}
+
+.under-header {
+  position: relative;
+
+}
+
+.banner-1 {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  opacity: 40%;
+
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+
+}
+
+.under-header-text {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.small-image {
+  max-width: 180px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.big-picture {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.big-image {
+  text-align: center;
+  width: 100%;
+}
+
+.small-image-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+
+.right-side-image-card {
+  flex: 1;
+  margin: 10px 35px;
+
+
+}
+
+.left-side-image-card {
+  flex: 0.7;
+  margin: 10px 35px;
+}
+
+
+.image-card-black {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-card-white {
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side-image-card p {
+  margin: 10px 0px;
+}
+
+.gym-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  align-items: center;
+  background-color: white;
+}
+
+.gym-cont1,
+.gym-cont2 {
+  flex: 1;
+  width: 100%;
+}
+
+.gym-cont1 {
+  padding: 25px 0px 25px 35px;
+}
+
+.gym-cont2 {
+  padding: 25px 35px 25px 0px;
+}
+
+.gym-pic {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+  .small-image-div {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .small-image {
+    width: 0;
+    max-width: none;
+    flex: 1;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .left-side-image-card {
+    min-width: 290px;
+  }
+
+  .footer {
+    margin: 0px;
+  }
+
+  .banner-text {
+    width: 80%;
+  }
+
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="illustration.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="photography.css">
+  <link rel="stylesheet" href="about-me.css">
+  <link rel="stylesheet" href="front.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<div class="image-popup">
+    <img class="popup-image">
+</div>
+
+
+<body>
+  <header class="header">
+    <div class="left-section">
+      <a href="index.html" class="home-name">Kristijan Knježević</a>
+      <img class="dots" src="cover/dots.PNG">
+    </div>
+  
+    <nav class="right-section" id="nav-menu">
+      <!-- maybe need to switch <p> to <a> in the future-->
+      <a class="home" href="index.html">Home</a>
+      <a class="illustration" href="illustration.html">Graphic Design</a>
+      <a class="programming" href="front.html">UI/UX &amp; Front-End Development</a>
+      <a class="photography" href="photography.html">Photography</a>
+      <a class="contact active" href="contact.html">Contact</a>
+      <a class="about-me" href="about-me.html">About me</a>
+    </nav>
+    <button class="hamburger" id="hamburger"><img class="hamburger-img" src="icons/menu.png"></button>
+  </header>
+  <main>
+    <div class="under-header">
+      <img class="banner-1" src="banner/banner-2.jpg">
+      <div class="banner-text">
+        <p class="title-font"><span class="span-orange">Connect</span> with me!</p>
+        <P class="under-header-text">I'm Kristijan — <strong>a graphic and product designer</strong> who moves between
+          print systems and
+          interface design. I take a brand from identity to shippable UI without losing the <strong>plot in
+            between.</strong> Worked on
+          variety of projects in my 10+ years career and eager to learn new things.</p>
+      </div>
+    </div>
+
+    <div class="contact-div">
+      <p class="mini-text-white">CONTACT ME</p>
+      <p class="mid-title-white">I look forward for <span class="span-orange">mutual collaboration!</span></p>
+    </div>
+
+    <form class="input-card2" action="https://formspree.io/f/mgaerlqy" method="POST">
+      <div class="input-card-left">
+        <div class="input-name">
+          <p>Name</p>
+          <input class="typebar" type="text" name="name" placeholder="Type here">
+        </div>
+        <div class="input-email">
+          <p>E-mail</p>
+          <input class="typebar" type="text" name="email" placeholder="Type here">
+        </div>
+        <div class="input-msg">
+          <p>Message</p>
+          <textarea class="typebar2" name="message" placeholder="Type here"></textarea>
+          <button class="submit-button" type="submit">Submit</button>
+        </div>
+      </div>
+      <div class="input-card-right2">
+        <p>You can contact me also on:</p>
+        <p class="main-text"><strong>Phone: </strong>+387 63 981 587</p>
+        <p class="main-text"><strong>Email: </strong>kikyknjezevic@gmail.com</p>
+        <p class="main-text">And also on links below!</p>
+        <div class="social-media2">
+          <a href="https://www.facebook.com/kristijan.knjezevic/">
+            <img class="facebook" src="icons/facebook.png"></a>
+          <a href="https://www.instagram.com/kiky_knjezevic/?hl=en">
+            <img class="instagram" src="icons/instagram.png"></a>
+          <a href="https://www.linkedin.com/in/kikyknjezevic/">
+            <img class="linkedin" src="icons/linkedin.png"></a>
+          <a href="https://www.behance.net/kiiiffff">
+            <img class="behance" src="icons/behance.png"></a>
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="made-by">&copy; 2026 Kristijan Knježević</div>
+    <div class="html">Graphic Designer &middot; UI/UX Designer &middot; Front-End Developer</div>
+  </footer>
+
+<script src="front.js"></script>
+
+</body>
+
+</html>
