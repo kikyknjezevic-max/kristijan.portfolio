@@ -79,7 +79,7 @@
   align-items: center;
   text-align: center;
   padding: 15px;
-  border: 1px solid rgba(230, 78, 8, 1);
+  border: 1px solid rgba(250, 30, 78, 1);
   margin: 15px;
 }
 
@@ -99,14 +99,14 @@
 }
 
 .orange-text {
-  color: rgba(230, 78, 8, 1);
+  color: rgba(250, 30, 78, 1);
   font-weight: 700;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
 .orange-text2 {
-  color: rgba(230, 78, 8, 1);
+  color: rgba(250, 30, 78, 1);
   font-size: 12px;
 }
 
