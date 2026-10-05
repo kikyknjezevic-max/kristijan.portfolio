@@ -126,7 +126,7 @@ p {
 }
 
 .span-orange {
-  color: rgba(235, 78, 8, 1);
+  color: rgba(250, 30, 78, 1);
 }
 
 .mini-text-black {
@@ -190,7 +190,7 @@ p {
 }
 
 .card-title {
-  color: rgba(235, 78, 8, 1);
+  color: rgba(250, 30, 78, 1);
   font-size: 28px;
   font-weight: 800;
   margin-top: 10px;
@@ -206,7 +206,7 @@ p {
 }
 
 .orange-button {
-  background-color: rgba(235, 78, 8, 1);
+  background-color: rgba(250, 30, 78, 1);
   color: rgba(30, 30, 30, 1);
   width: 120px;
   border: none;
@@ -233,7 +233,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 15px 35px;
-  border: 1px solid rgba(235, 78, 8, 1);
+  border: 1px solid rgba(250, 30, 78, 1);
   margin: 15px 35px 15px 35px;
   flex-wrap: wrap;
   gap: 35px;
@@ -314,7 +314,7 @@ p {
 }
 
 .submit-button {
-  background-color: rgba(235, 78, 8, 1);
+  background-color: rgba(250, 30, 78, 1);
   color: rgba(30, 30, 30, 1);
   width: 100%;
   border: none;
