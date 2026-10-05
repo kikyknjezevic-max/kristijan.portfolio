@@ -13,11 +13,11 @@
   margin-top: 10px;
 }
 
+
 .poster-img {
   width: 100%;
-  min-height: 300px;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
+  display: block;
 }
 
 .left-poster {
@@ -154,10 +154,10 @@
   }
 
   .right-poster2 {
-  margin: 0;
-  padding: 25px 35px 25px 35px;
-  gap: 0;
-  
+    margin: 0;
+    padding: 25px 35px 25px 35px;
+    gap: 0;
+
   }
 
 }
