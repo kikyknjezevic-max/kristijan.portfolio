@@ -43,6 +43,15 @@
   align-items: center;
 }
 
+.mini-text-photo {
+  font-family: "Archivo";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 20px;
+  
+
+}
+
 .left-photo {
   flex: 1;
   margin: 25px 18px 25px 35px;
