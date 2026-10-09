@@ -7,7 +7,337 @@
 
 .small-image-div2 {
   width: 100%;
+  display: flex;.small-image-ui {
+  max-width: 230px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.small-image-div2 {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+.website-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  padding: 25px 35px 25px 35px;
+  box-sizing: border-box;
+}
+
+.website-image {
+  width: 80%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.website-container .left-photo,
+.frontend-container .left-photo {
+  width: 100%;
+  display: flex;
+  margin: 25px 0px 25px 0px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-photo3 {
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-text-black3 {
+  margin-left: 35px;
+  font-family: "Archivo";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 20px;
+
+}
+
+.mid-title-black3 {
+  font-size: 34px;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+.main-text-alternate {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.main-text-alternate-black {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.right-photo .main-text {
+  margin: 25px 35px 25px 35px;
+}
+
+.frontend-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px 35px 25px 35px;
+  box-sizing: border-box;
+
+}
+
+.image-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.popup-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  transform: scale(0.95);
+  transition: transform 0.25s ease;
+}
+
+.image-popup.show {
+  opacity: 1;
+}
+
+.right-side-image-card-ui {
+  text-align: center;
+  padding: 0px 35px;
+}
+
+.right-side-image-card2 {
+  text-align: center;
+}
+
+.mini-alternate {
+  color: white;
+  font-family: "Archivo";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 20px;
+}
+
+.left-side-image-card-special {
+  flex: 0.7;
+  margin: 30px 35px;
+}
+
+.left-side-image-card2 {
+  flex: 1;
+  margin: 10px 35px;
+
+}
+
+.image-popup.show .popup-image {
+  transform: scale(1);
+}
+
+
+.rps,
+.result-p {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.moves-p,
+.score-p {
+  font-size: 20px;
+}
+
+.button-div {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  padding: 25px 35px;
+}
+
+.scissors,
+.rock,
+.paper {
+  object-fit: cover;
+}
+
+.rock-button,
+.paper-button,
+.scissors-button {
+  background-color: transparent;
+  width: 90px;
+  height: 90px;
+  border: solid 1px rgba(250, 30, 78, 1);
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.rock-button:hover,
+.paper-button:hover,
+.scissors-button:hover {
+  width: 95px;
+  height: 95px;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0px;
+  text-align: center;
+}
+
+.game-container .orange-button {
+  margin: 0px;
+}
+
+.letter-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+}
+
+.result-p {
+  font-size: 38px;
+  color: white;
+}
+
+.moves-p,
+.score-p {
+  color: white;
+  font-size: 20px;
+  padding-top: 7px;
+}
+
+.button-result-div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.button-play {
+  background-color: rgba(250, 30, 78, 1);
+  color: rgba(30, 30, 30, 1);
+  width: 120px;
+  border: none;
+  border-radius: 4px;
+  padding: 18px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-play:hover {
+  background-color: rgb(185, 19, 55);
+}
+
+@media (max-width: 768px) {
+
+  .small-image-ui {
+    max-width: 80px;
+  }
+
+  .small-image-div2 {
+    flex: 1;
+  }
+
+  .website-container {
+    padding: 25px 35px 25px 35px;
+    box-sizing: border-box;
+  }
+
+  .mini-alternate {
+    color: white;
+    font-family: "Archivo";
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 20px;
+  }
+
+
+  .website-image {
+    border: 1px solid white;
+  }
+
+  .frontend-container {
+    padding: 25px 35px 25px 35px;
+    box-sizing: border-box;
+  }
+
+  .mini-text-black3 {
+    margin-left: 0;
+  }
+
+  .mid-title-black3 {
+    margin-left: 0;
+  }
+
+  .mini-alternate {
+    letter-spacing: 15px;
+  }
+
+  .main-text-alternate,
+  .main-text-alternate-black {
+    text-align: start;
+  }
+
+  .rock-button,
+  .paper-button,
+  .scissors-button {
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+  }
+
+  .moves-p,
+.score-p {
+  font-size: 15px;
+}
+
+  }
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
