@@ -209,16 +209,18 @@
   vertical-align: middle;
 }
 
-.score-p {
-  font-size: 20px;
-}
-
 .button-div {
   display: flex;
   flex-direction: row;
   gap: 50px;
   justify-content: center;
   padding: 25px 35px;
+}
+
+.rules-p {
+  font-size: 20px;
+  margin-top: 25px;
+  color: white;
 }
 
 .rock-button img,
@@ -389,7 +391,8 @@
   }
 
   .moves-p,
-  .score-p {
+  .score-p,
+  .rules-p {
   font-size: 15px;
   }
 
@@ -402,8 +405,8 @@
     background-color: rgba(250, 30, 78, 0.4);
     box-shadow: 0 0 18px rgba(250, 30, 78, 1);
     transform: scale(0.94);
-    }
   }
+}
 
 @media (hover: hover) and (pointer: fine) {
   .rock-button:active,
