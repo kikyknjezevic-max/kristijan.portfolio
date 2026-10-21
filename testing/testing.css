@@ -662,8 +662,9 @@ button:active {
     padding-top: 0;
   }
 
+  .down-side label,
   .down-side .cs-quant {
-    margin: 0;
+    font-size: 12px;
   }
 
   .down-side .add-button {
