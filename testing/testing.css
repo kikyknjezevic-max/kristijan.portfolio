@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -21,20 +20,16 @@ body {
   margin-top: 90px;
 
   background:
-    radial-gradient(
-      ellipse at 10% 10%,
+    radial-gradient(ellipse at 10% 10%,
       rgba(250, 30, 78, 0.10),
-      transparent 45%
-    ),
-    radial-gradient(
-      ellipse at 90% 55%,
+      transparent 45%),
+    radial-gradient(ellipse at 90% 55%,
       rgba(250, 30, 78, 0.08),
-      transparent 40%
-    ),
+      transparent 40%),
     #0b0b0f;
 
   color: var(--text);
-  
+
 }
 
 /* Header */
@@ -263,7 +258,7 @@ h1 {
   cursor: pointer;
   outline: none;
   transition: border-color 0.2s ease,
-              box-shadow 0.2s ease;
+    box-shadow 0.2s ease;
 }
 
 .cs-quant:hover {
@@ -581,10 +576,10 @@ button:active {
   }
 
   .logo-header {
-  width: 100px;
-  height: auto;
-  object-fit: contain;
-}
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
 
   .mid-header {
     flex: 1;
@@ -620,17 +615,67 @@ button:active {
   }
 
   .product-container {
-    height: 550px;
-    padding: 16px;
+    height: auto;
+    min-height: 0;
+    padding: 12px;
   }
 
-  .up-side {
-    flex-basis: 220px;
-    height: 220px;
+  .down-side {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .down-side .small-image {
+    flex-shrink: 0;
+    margin: 8px 0 0;
   }
 
   .down-side h3 {
-    font-size: 16px;
+    width: 100%;
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+    overflow: hidden;
+  }
+
+  .down-side p {
+    margin: 0;
+    min-height: 22px;
+    flex-shrink: 0;
+    font-size: 13px;
+  }
+
+  .down-side>div {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .down-side .cs-quant {
+    margin: 0;
+  }
+
+  .down-side .add-button {
+    flex-shrink: 0;
+    margin-top: 4px;
+    padding: 10px 4px;
+    font-size: 10px;
+  }
+
+  .up-side {
+    flex: 0 0 180px;
+    height: 180px;
   }
 
   .cart-page {
@@ -721,10 +766,10 @@ button:active {
   }
 
   .logo-header {
-  width: 100px;
-  height: auto;
-  object-fit: contain;
-}
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
 
   .mid-header {
     padding: 0 6px;
@@ -762,4 +807,3 @@ button:active {
     width: 40px;
   }
 }
-
