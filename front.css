@@ -246,11 +246,12 @@
   align-items: center;
 }
 
-.rock-button:hover,
-.paper-button:hover,
-.scissors-button:hover {
-  width: 95px;
-  height: 95px;
+.rock-button:active,
+.paper-button:active,
+.scissors-button:active {
+  background-color: rgba(250, 30, 78, 0.25);
+  box-shadow: 0 0 12px rgba(250, 30, 78, 0.7);
+  border-color: rgba(250, 30, 78, 1);
 }
 
 .game-container {
@@ -393,3 +394,23 @@
 }
 
   }
+
+  @media (hover: none) {
+  .rock-button:active,
+  .paper-button:active,
+  .scissors-button:active {
+    background-color: rgba(250, 30, 78, 0.4);
+    box-shadow: 0 0 18px rgba(250, 30, 78, 1);
+    transform: scale(0.94);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .rock-button:active,
+  .paper-button:active,
+  .scissors-button:active {
+    background-color: rgba(250, 30, 78, 0.4);
+    box-shadow: 0 0 18px rgba(250, 30, 78, 1);
+    transform: scale(0.94);
+  }
+}
