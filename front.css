@@ -389,9 +389,9 @@
   }
 
   .moves-p,
-.score-p {
+  .score-p {
   font-size: 15px;
-}
+  }
 
   }
 
@@ -402,8 +402,8 @@
     background-color: rgba(250, 30, 78, 0.4);
     box-shadow: 0 0 18px rgba(250, 30, 78, 1);
     transform: scale(0.94);
+    }
   }
-}
 
 @media (hover: hover) and (pointer: fine) {
   .rock-button:active,
