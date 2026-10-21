@@ -63,7 +63,7 @@ const products = [
   {
     id: "3ebe75dc-64d2-4137-8860-1f5a963e534b",
     image: "images/products/6-piece-white-dinner-plate-set.jpg",
-    name: "6 Piece White Dinner Plate Set",
+    name: "White Dinner Plate Set",
     rating: {
       stars: 4,
       count: 37
