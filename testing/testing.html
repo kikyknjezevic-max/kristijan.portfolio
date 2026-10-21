@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="testing.css">
+  <link rel="icon" href="images/kWg1q.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Shop</title>
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <header class="header" id="header-id">
+    <div class="left-header">
+      <a href="#my-webshop">
+      <img src="images/Kristijan Webshop Logo.png" class="logo-header">
+      </a>      
+    </div>
+    <div class="mid-header">
+      <input class="input js-input" type="text" placeholder="Search here...">
+    </div>
+    <div class="right-header">
+      
+      <a class="cart-link"  href="#cart-page-id">
+        <button class="cart-number js-cart-number"></button>       
+        <img src="images/Neon Pink Shopping Cart Icon.png" class="image-cart"></a>
+    </div>
+  </header>
+
+   <h1 id="my-webshop">My Webshop</h1>
+
+  <grid class="grid" id="grid-id">    
+  </grid>  
+
+  <section class="cart-page" id="cart-page-id">
+
+  <div class="cart-header">
+    <div>
+      <p class="cart-eyebrow">YOUR SHOPPING BAG</p>
+      <h1>Shopping Cart</h1>
+      <p class="cart-subtitle">Review your items before checkout.</p>
+    </div>
+
+    <div class="cart-count">
+      <span class="js-cart-quantity">0</span> items
+    </div>
+  </div>
+
+  <div class="cart-layout">
+
+    <div class="cart-main">
+      <div class="cart-section-heading">
+        <h2 class="your-items">Your Items:</h2>
+      </div>
+
+      <p class="js-cart-msg"></p>
+
+      <div class="cart-list-products"></div>
+
+      <a class="continue-shopping" href="#my-webshop">
+        ← Continue shopping
+      </a>
+    </div>
+
+    <aside class="order-summary">
+      <h2>Order Summary</h2>
+
+      <div class="total-price-section"></div>
+
+      <button class="checkout-button" type="button">
+        Proceed to checkout <span>→</span>
+      </button>
+
+      <p class="secure-note">
+        Secure checkout · Thank you for shopping with us.
+      </p>
+    </aside>
+
+  </div>
+</section>
+
+<div class="maintenance-overlay" id="maintenance-overlay">
+  <div class="maintenance-modal">
+    <button class="close-modal" id="close-modal">✕</button>
+
+    <img src="images/under-maintenance.jpg"
+         alt="Under maintenance"
+         class="maintenance-image">
+  </div>
+</div>
+
+  <script src="data/products.js"></script>
+  <script src="data/html-generation.js"></script>
+  <script src="testing.js"></script>
+</body>
+
+</html>

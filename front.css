@@ -27,11 +27,46 @@
   box-sizing: border-box;
 }
 
+.webshop-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  padding: 25px 35px 25px 35px;
+  box-sizing: border-box;
+}
+
 .website-image {
   width: 80%;
   object-fit: cover;
   object-position: center;
   cursor: pointer;
+}
+
+.webshop-image {
+  width: 80%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.webshop-image:hover {
+  transform: translateY(-3px);
+}
+
+.webshop-container .left-photo-webshop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0px 25px 0px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .website-container .left-photo,
@@ -272,6 +307,26 @@
 
 .button-play:hover {
   background-color: rgb(185, 19, 55);
+  color: white;
+}
+
+.button-webshop {
+  background-color: rgba(250, 30, 78, 1);
+  color: rgba(30, 30, 30, 1);
+  border: none;
+  border-radius: 4px;
+  padding: 15px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.button-webshop:hover {
+  background-color: rgb(185, 19, 55);
+  color: white;
+  transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {

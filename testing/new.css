@@ -1,0 +1,48 @@
+.body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.hidden-view {
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  inset: 0;
+}
+
+.image {
+  width: 900px;
+  height: auto;
+  object-fit: contain;
+}
+
+.active-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.close-button {
+  background-color: #fa1e4e;
+  color: var(--button);
+  font-size: 16px;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.activate-button {
+  background-color: #fa1e4e;
+  color: var(--button);
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
