@@ -114,44 +114,49 @@ function renderCartTotals() {
     <p>Total price: €${(totalCents / 100).toFixed(2)}</p>
   `;
 }
-  // Add products to the cart.
+// Add products to the cart.
 function attachAddToCartListeners() {
   const buttons = document.querySelectorAll('.add-button');
-  
+
   buttons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const matchingItem = cart.find((product) => {
-      return product.name === button.dataset.product;
-    });
-
-    const something = button.closest('.product-container');
-    const quantSelect = something.querySelector('.cs-quant');
-    const quantity = Number(quantSelect.value);
-
-    if (matchingItem) {
-      matchingItem.quantity += quantity;
-    } else {
-      cart.push({
-        name: button.dataset.product,
-        price: Number(button.dataset.price),
-        image: button.dataset.image,
-        quantity: quantity
+    button.addEventListener('click', () => {
+      const matchingItem = cart.find((product) => {
+        return product.name === button.dataset.product;
       });
-    }
 
-    renderCartList();
-    renderCartTotals();
-    
+      const something = button.closest('.product-container');
+      const quantSelect = something.querySelector('.cs-quant');
+      const quantity = Number(quantSelect.value);
 
-    localStorage.setItem('save', JSON.stringify(cart));
+      if (matchingItem) {
+        matchingItem.quantity += quantity;
+      } else {
+        cart.push({
+          name: button.dataset.product,
+          price: Number(button.dataset.price),
+          image: button.dataset.image,
+          quantity: quantity
+        });
+      }
 
-    button.innerHTML = 'ADDED';
+      renderCartList();
+      renderCartTotals();
 
-    setTimeout(() => {
-      button.innerHTML = 'ADD TO CART';
-    }, 2000);
+
+      localStorage.setItem('save', JSON.stringify(cart));
+
+      Swal.fire({
+        title: 'Succes!',
+        text: `You added ${button.dataset.product}`,
+        icon: 'success',
+        iconColor: '#fa1e4e',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#fa1e4e',
+        background: '#0b0b0f',
+        color: '#ffffff'
+      });
+    });
   });
-});
 };
 
 attachAddToCartListeners();
@@ -166,10 +171,25 @@ cartList.addEventListener('click', (event) => {
 
   const index = Number(clickedButton.dataset.index);
 
-  cart.splice(index, 1);
+  Swal.fire({
+    title: 'Remove product?',
+    text: 'Are you sure?',
+    icon: 'question',
+    iconColor: '#fa1e4e',
+    showCancelButton: true,
+    confirmButtonColor: '#fa1e4e',
+    background: '#0b0b0f',
+    color: '#ffffff',
+    confirmButtonText: 'Remove',
+    cancelButtonText: 'Go back'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      cart.splice(index, 1);
 
-  renderCartList();
-  renderCartTotals();
+      renderCartList();
+      renderCartTotals();
+    }
+  });
 
   localStorage.setItem('save', JSON.stringify(cart));
 });
